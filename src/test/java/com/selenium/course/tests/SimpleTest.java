@@ -23,7 +23,7 @@ public class SimpleTest {
     public void executeSimpleTest() throws InterruptedException {
         driver.get("https://www.saucedemo.com/");
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         WebElement username = driver.findElement(By.id("user-name"));
         username.sendKeys("standard_user");
@@ -34,7 +34,7 @@ public class SimpleTest {
         WebElement loginButton = driver.findElement(By.className("btn_action"));
         loginButton.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         Select productOrderList = new Select(driver.findElement(By.className("product_sort_container")));
         productOrderList.selectByValue("lohi");
