@@ -20,7 +20,7 @@ public class ProductTests extends TestUtil {
 
         productListerPage.addToCart("Sauce Labs Backpack");
 
-        // Hard assert
+        // Hard assert.
         Assert.assertTrue(productListerPage.isProductPriceCorrect("Sauce Labs Backpack", "$29.99"));
 
         SoftAssert softAssert = new SoftAssert();
