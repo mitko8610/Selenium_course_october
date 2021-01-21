@@ -25,7 +25,6 @@ public class ProductTests extends TestUtil {
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(productListerPage.isProductPriceCorrect("Sauce Labs Backpack", "$29.99"));
-//        softAssert.assertTrue(productListerPage.isProductPriceCorrect("Sauce Labs Bike Light", "$222"));
         softAssert.assertFalse(productListerPage.isProductPriceCorrect("Sauce Labs Bike Light", "$29.99"));
         softAssert.assertEquals(productListerPage.getProductPrice("Sauce Labs Bike Light"), "$19.99");
 
